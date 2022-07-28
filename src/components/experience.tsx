@@ -4,6 +4,7 @@ type experienceProps = {
   startDate: string;
   endDate: string;
   description: string;
+  url?: string;
 };
 
 function renderItem(item: experienceProps) {
@@ -13,6 +14,7 @@ function renderItem(item: experienceProps) {
         <strong>{item.name}</strong>
         <code>{item.startDate + " - " + item.endDate}</code>
       </h3>
+      {item.url ? <a href={item.url}>{item.url}</a> : <div />}
       <p>
         <em>{item.position}</em>
         <br />
@@ -27,7 +29,7 @@ export function Experience(props: { experience: Array<any> }) {
   return (
     <div className="section">
       <h2>
-        <strong>Experience</strong>
+        <strong>Experience & Projects </strong>
       </h2>
       {experience.map((item: any) => {
         return renderItem(item);

@@ -21,14 +21,24 @@ export const data = {
       startDate: "May, 2020",
       endDate: "July, 2021",
       description:
-        "In this period of time, I attended two region contest and won a bronze medal.",
+        "In this period of time, I attended two region contest and won a bronze medal. At the same time, I made my CodeForce score up to 1700 in just 10 competition.",
     },
     {
       name: "Image Aesthetics Assessment Research Group in BUPT",
       position: "Research Intern",
       startDate: "July, 2021",
       endDate: "January, 2022",
-      description: "", //TODO: add description
+      description:
+        "During this period, I read lots of papers about the contemporary method of graphic aesthetics assessment and other backbones of computer vision, for instance, Swin Transformer and Vision Transformer. Besides, I have coded a lot in such field and make reproduction code of some classic papers like ResNet.",
+    },
+    {
+      name: "An open-source Linux-like operating system",
+      position: "Developer",
+      startDate: "March, 2022",
+      url: "https://github.com/sage-os-team/sage-os",
+      endDate: "June 2022",
+      description:
+        'We collaborated to develop a linux-like open source operating system based on MIT\'s xv6 system. We improved the physical memory allocation mechanism on top of the most basic linux 0.1.1, and ported several kernel mini-games, which is named as "SAGE-OS."',
     },
   ],
   skills: [
