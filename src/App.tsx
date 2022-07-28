@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { data } from "./services/data";
+import { Container } from "@mui/material";
+import { Header } from "./components/header";
+import { Education } from "./components/education";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import { Experience } from "./components/experience";
+import { Skills } from "./components/skills";
+import { Honor } from "./components/honor";
+import "./App.css";
 
 function App() {
+  const { name, contact, education, experience, skills, honor } = data;
+  console.log(contact);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth={"xl"}>
+      <Header name={name} contact={contact} />
+      <Education education={education} />
+      <Experience experience={experience} />
+      <Skills skills={skills} />
+      <Honor honor={honor} />
+    </Container>
   );
 }
 
